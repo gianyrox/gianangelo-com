@@ -82,23 +82,29 @@ const str_dict = [
 export default function Component({ id }: { id: number }) {
   return (
     <div>
-      <div className="flex w-2/3 m-auto h-2/3 p-auto justify-content align-center">
+      <div className="flex w-2/3 m-auto p-auto justify-content align-center h-fit">
         <a href={str_dict[id].link} target="_blank">
           <div className="main_button">{str_dict[id].msg}</div>
         </a>
       </div>
       <div>
-        {str_dict[id].projects.map((project) => {
+        {str_dict[id].projects.map((project, index) => {
           return (
             <div>
               <div className="p-4">
-                <div className="m-4 font-bold title">
+                <div key={index} className="m-4 font-bold title">
                   <p className="title-button">{project.name}</p>
                 </div>
               </div>
-              {project.description.map((line) => {
-                return <li className="line bg-opacity-90">{line}</li>;
-              })}
+              <ul>
+                {project.description.map((line, idx) => {
+                  return (
+                    <li key={idx} className="line bg-opacity-90">
+                      {line}
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
           );
         })}

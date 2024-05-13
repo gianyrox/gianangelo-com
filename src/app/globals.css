@@ -64,7 +64,6 @@ body {
 }
 
 .component-container {
-  height: fit-content;
   padding: 10px;
   display: flex;
   flex: 1;
