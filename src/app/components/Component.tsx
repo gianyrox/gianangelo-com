@@ -80,6 +80,10 @@ const str_dict = [
 // let str_dict =
 
 export default function Component({ id }: { id: number }) {
+  function ListItem({ value }: { value: string }) {
+    return <li className="line bg-opacity-90">{value}</li>;
+  }
+
   return (
     <div>
       <div className="flex w-2/3 m-auto p-auto justify-content align-center h-fit">
@@ -90,19 +94,15 @@ export default function Component({ id }: { id: number }) {
       <div>
         {str_dict[id].projects.map((project, index) => {
           return (
-            <div>
+            <div key={index}>
               <div className="p-4">
-                <div key={index} className="m-4 font-bold title">
+                <div className="m-4 font-bold title">
                   <p className="title-button">{project.name}</p>
                 </div>
               </div>
               <ul>
-                {project.description.map((line, idx) => {
-                  return (
-                    <li key={idx} className="line bg-opacity-90">
-                      {line}
-                    </li>
-                  );
+                {project.description.map((line, index) => {
+                  return <ListItem key={index} value={line} />;
                 })}
               </ul>
             </div>
