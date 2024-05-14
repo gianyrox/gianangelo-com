@@ -10,7 +10,7 @@ const str_dict = [
         name: "Marketing Funnel",
         description: [
           "This summer we are are marketing Roley.",
-          "We need to get as many aactors aware of Roley.",
+          "We need to get as many actors aware of Roley.",
           "Incentives for every actor sign up.",
           "Big incentives for selling to acting agencies.",
           "Consider joining if you want to build a marketing funnel.",
