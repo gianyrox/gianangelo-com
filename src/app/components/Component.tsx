@@ -85,8 +85,8 @@ export default function Component({ id }: { id: number }) {
   }
 
   return (
-    <div>
-      <div className="flex w-2/3 m-auto p-auto justify-content align-center h-fit">
+    <div className="">
+      <div className="flex w-2/3 m-auto p-auto justify-content align-center h-fit ">
         <a href={str_dict[id].link} target="_blank">
           <div className="main_button">{str_dict[id].msg}</div>
         </a>

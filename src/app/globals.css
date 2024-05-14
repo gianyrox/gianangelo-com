@@ -30,6 +30,10 @@ body {
   background: #000;
 }
 
+.border-component {
+  border: 2px white solid;
+}
+
 .main_button {
   padding: 17px 40px;
   border-radius: 30px;
@@ -64,6 +68,7 @@ body {
 }
 
 .component-container {
+  height: fit-content;
   padding: 10px;
   display: flex;
   flex: 1;

@@ -14,7 +14,7 @@ export default function Home() {
           for more information.
         </p>
       </div>
-      <div className="grid w-2/3 grid-rows-3 gap-10 p-4 m-4 lg:grid-cols-3 ">
+      <div className="flex flex-col w-4/5 gap-10 p-4 m-4 lg:flex-row lg:w-4/5 lg:grid-cols-3 ">
         <div className="w-full h-full component-container">
           <Component id={0} />
         </div>
