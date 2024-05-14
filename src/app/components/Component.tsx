@@ -18,6 +18,16 @@ const str_dict = [
           "If you do a good job and would like to continue, equity options are possible.",
         ],
       },
+      {
+        name: "Legal",
+        description: [
+          "One casting network threatened us because we mentioned them in a Reddit Post.",
+          "WWe need to know the exact laws regarding our auto applying software on Casting Sites.",
+          "What does it take to be an acting agency as opposed to an acting service provider.",
+          "C Corporation Functions allowed.",
+          "Join if you are interested in learning about company incorporation or the boundaries for startups.",
+        ],
+      },
     ],
   },
   {
