@@ -25,3 +25,111 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.black {
+  background: #000;
+}
+
+.border-component {
+  border: 2px white solid;
+}
+
+.main_button {
+  padding: 17px 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  color: black;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  transform: translateY(0) translateX(0);
+  text-align: center;
+}
+
+.main_button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+  transform: translateY(-10px) translateX(-10px);
+}
+
+.main_button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px) translateX(10px);
+  transition: 100ms;
+}
+
+.component-container {
+  height: fit-content;
+  padding: 10px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 10px;
+  height: 50px;
+  color: rgb(93 24 220);
+}
+
+.line {
+  background-color: black;
+  padding: 10px;
+  font-weight: 4px;
+  border-radius: 10px;
+}
+.line:hover {
+  color: rgb(93 24 220);
+  background-color: white;
+}
+
+/* Yoinked from CodePen, but improved the animation
+so that it is smooth among other more minor things */
+.title-button {
+  padding: 10px 10px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.title-button:hover,
+:focus {
+  color: #ffffff;
+  background: #5d18dc;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #5d18dc, 0 0 20px #5d18dc, 0 0 50px #5d18dc,
+    0 0 100px #5d18dc;
+}
+
+.email_input {
+  color: white;
+  border: 2px solid #8707ff;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background: transparent;
+  max-width: 190px;
+}
+
+.email_input:active {
+  box-shadow: 2px 2px 15px #8707ff inset;
+}
